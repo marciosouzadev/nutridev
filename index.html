@@ -3,14 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reeduque-se | Ebook de Nutrição e Educação Física por Marcio Souza</title>
-<meta name="description" content="Ebook educativo sobre nutrição, hábitos saudáveis e atividade física, escrito por Marcio Souza — Bacharel em Educação Física e Nutrição. Conteúdo baseado em evidências científicas.">
+<title>Marcio Souza | Guias de Nutrição e Treino Baseados em Evidências</title>
+<meta name="description" content="Guias práticos de nutrição, treino e hábitos saudáveis, escritos por Marcio Souza — Bacharel em Educação Física e Nutrição. Conheça o Guia Prático para quem vive com menos tempo, mais resultado.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!--
+  ============================================================================
+  COMO ESSA PÁGINA FUNCIONA (leia antes de editar)
+  ============================================================================
+  Esta página foi pensada como uma VITRINE DE CONTEÚDOS, não apenas a venda
+  de um único ebook. Hoje existe 1 produto disponível ("Guia Prático para
+  quem vive com menos tempo, mais resultado"). Conforme você for lançando
+  novos guias, adicione novos cards na seção "Catálogo" (#produtos) e, se
+  quiser, uma nova seção de detalhes/venda para cada novo produto.
+
+  O QUE EDITAR PARA CADA PRODUTO:
+  - Imagem de capa   -> pasta /img (troque o arquivo .svg por um .jpg/.png
+                         com o mesmo nome, ou atualize o "src" das tags <img>)
+  - Preço            -> dentro da seção "Comprar" (id="comprar")
+  - Link de compra   -> botão com o comentário "LINK DE PAGAMENTO" abaixo
+
+  COMO GERAR O LINK DE PAGAMENTO (Mercado Pago):
+  1. Acesse sua conta Mercado Pago > Cobrar > Link de pagamento
+  2. Crie um link para o produto, com o preço definido
+  3. Copie o link gerado (algo como https://mpago.la/xxxxxxx)
+  4. Cole no "href" do botão "Comprar agora" (procure por LINK DE PAGAMENTO)
+  Alternativa: plataformas como Hotmart, Kiwify ou Eduzz entregam o PDF
+  automaticamente por e-mail após o pagamento — vale avaliar se você quer
+  entrega automática do arquivo.
+  ============================================================================
+-->
 
 <!-- HEADER -->
 <header class="header" id="header">
@@ -19,13 +46,12 @@
 
     <nav class="nav" id="nav">
       <a href="#sobre" class="nav__link">Sobre mim</a>
-      <a href="#conteudo" class="nav__link">O que você vai aprender</a>
+      <a href="#produtos" class="nav__link">Produtos</a>
       <a href="#depoimentos" class="nav__link">Depoimentos</a>
-      <a href="#oferta" class="nav__link">O ebook</a>
       <a href="#faq" class="nav__link">Dúvidas</a>
     </nav>
 
-    <a href="#oferta" class="btn btn--primary btn--small header__cta">Quero o ebook</a>
+    <a href="#comprar" class="btn btn--primary btn--small header__cta">Comprar agora</a>
 
     <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -39,37 +65,34 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content reveal">
-        <span class="badge">📘 E-book digital</span>
-        <h1>Aprenda nutrição e hábitos saudáveis de forma <span class="text-gradient">prática</span> e baseada em evidências</h1>
+        <span class="badge">📘 Conteúdo digital</span>
+        <h1>Guias práticos de nutrição e treino para o seu <span class="text-gradient">dia a dia</span></h1>
         <p class="hero__subtitle">
-          Um guia prático de nutrição e atividade física, escrito por um profissional formado em
-          Educação Física e Nutrição, para você compreender melhor sua alimentação e desenvolver
-          hábitos sustentáveis no seu dia a dia.
+          Conteúdos diretos ao ponto, escritos por um profissional formado em Educação Física
+          e Nutrição — pensados para quem tem pouco tempo, mas quer fazer escolhas melhores
+          pela própria saúde.
         </p>
 
         <ul class="hero__points">
           <li>✅ Conteúdo baseado em evidências científicas</li>
           <li>✅ Desenvolvido a partir da experiência profissional do autor</li>
-          <li>✅ Linguagem clara e acessível, sem jargões desnecessários</li>
+          <li>✅ Linguagem clara e direta ao ponto</li>
         </ul>
 
         <div class="hero__actions">
-          <a href="#oferta" class="btn btn--primary btn--large">Quero adquirir o ebook</a>
-          <a href="#conteudo" class="btn btn--ghost btn--large">Ver o que vem no ebook</a>
+          <a href="#comprar" class="btn btn--primary btn--large">Quero o guia disponível agora</a>
+          <a href="#produtos" class="btn btn--ghost btn--large">Ver todos os conteúdos</a>
         </div>
 
         <div class="hero__trust">
-          <span>📚 Material desenvolvido para aplicação prática no dia a dia</span>
+          <span>📚 Novos guias sendo desenvolvidos com regularidade</span>
         </div>
       </div>
 
       <div class="hero__media reveal">
         <div class="ebook-mock">
-          <div class="ebook-mock__cover">
-            <span class="ebook-mock__kicker">EBOOK DIGITAL</span>
-            <span class="ebook-mock__title">Reeduque-se</span>
-            <span class="ebook-mock__author">Marcio Souza</span>
-          </div>
+          <!-- Imagem editável: troque o arquivo em /img -->
+          <img class="ebook-mock__cover-img" src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado">
           <div class="ebook-mock__shadow"></div>
         </div>
       </div>
@@ -86,10 +109,81 @@
     </div>
   </section>
 
+  <!-- CATÁLOGO DE PRODUTOS -->
+  <section class="section catalog" id="produtos">
+    <div class="container">
+      <span class="eyebrow center reveal">Biblioteca de conteúdos</span>
+      <h2 class="section__title reveal center-title">Conteúdos disponíveis</h2>
+      <p class="catalog__subtitle reveal">
+        Estou desenvolvendo novos guias práticos sobre nutrição, treino e hábitos saudáveis.
+        Este catálogo será atualizado conforme novos materiais forem lançados.
+      </p>
+
+      <div class="catalog__grid">
+
+        <!-- PRODUTO 1 (disponível) -->
+        <article class="product-card reveal">
+          <span class="product-card__badge product-card__badge--live">Disponível</span>
+          <div class="product-card__image-wrap">
+            <img class="product-card__image" src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado">
+          </div>
+          <div class="product-card__body">
+            <h3>Guia Prático para quem vive com menos tempo, mais resultado</h3>
+            <p>O guia direto ao ponto para emagrecer de verdade — mesmo com a agenda mais lotada do mundo.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$ 29,90</span>
+              <a href="#guia-menos-tempo" class="btn btn--primary btn--small">Ver detalhes</a>
+            </div>
+          </div>
+        </article>
+
+        <!--
+          PRÓXIMOS PRODUTOS: para adicionar um novo produto quando ele
+          ficar pronto, copie o bloco <article class="product-card"> acima,
+          cole abaixo e troque imagem, título, descrição, preço e link.
+          Os dois cards abaixo são apenas placeholders de "em breve".
+        -->
+
+        <!-- PRODUTO 2 (em breve) -->
+        <article class="product-card product-card--soon reveal">
+          <span class="product-card__badge product-card__badge--soon">Em breve</span>
+          <div class="product-card__image-wrap">
+            <img class="product-card__image" src="img/em-breve.svg" alt="Novo conteúdo em produção">
+          </div>
+          <div class="product-card__body">
+            <h3>Novo guia em produção</h3>
+            <p>Mais um conteúdo prático sobre nutrição e treino está a caminho.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price product-card__price--muted">Em breve</span>
+              <span class="btn btn--ghost btn--small" aria-disabled="true">Aguarde</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUTO 3 (em breve) -->
+        <article class="product-card product-card--soon reveal">
+          <span class="product-card__badge product-card__badge--soon">Em breve</span>
+          <div class="product-card__image-wrap">
+            <img class="product-card__image" src="img/em-breve.svg" alt="Novo conteúdo em produção">
+          </div>
+          <div class="product-card__body">
+            <h3>Novo guia em produção</h3>
+            <p>Mais um conteúdo prático sobre nutrição e treino está a caminho.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price product-card__price--muted">Em breve</span>
+              <span class="btn btn--ghost btn--small" aria-disabled="true">Aguarde</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CONTEXTO / DIFICULDADES COMUNS -->
   <section class="section problem">
     <div class="container">
-      <h2 class="section__title reveal">Por que é tão difícil manter uma alimentação saudável?</h2>
+      <h2 class="section__title reveal">Por que é tão difícil manter uma alimentação saudável com uma rotina corrida?</h2>
       <div class="problem__grid">
         <div class="problem__card reveal">
           <span class="problem__icon">🌀</span>
@@ -97,11 +191,11 @@
         </div>
         <div class="problem__card reveal">
           <span class="problem__icon">⏳</span>
-          <p>Nem sempre é possível ter acompanhamento profissional individual com a frequência desejada</p>
+          <p>Pouco tempo no dia a dia dificulta cozinhar, treinar e planejar as refeições com calma</p>
         </div>
         <div class="problem__card reveal">
           <span class="problem__icon">🔁</span>
-          <p>Mudanças muito restritivas costumam ser difíceis de manter a longo prazo</p>
+          <p>Mudanças muito radicais costumam ser difíceis de manter a longo prazo</p>
         </div>
         <div class="problem__card reveal">
           <span class="problem__icon">📚</span>
@@ -109,9 +203,10 @@
         </div>
       </div>
       <p class="problem__bridge reveal">
-        Muitas pessoas encontram dificuldade porque recebem informações contraditórias e têm
-        dificuldade em transformar conhecimento em hábitos consistentes. Foi pensando nisso que
-        desenvolvi o <strong>Reeduque-se</strong>.
+        Muitas pessoas encontram dificuldade porque recebem informações contraditórias, têm pouco
+        tempo no dia a dia e acabam não conseguindo transformar conhecimento em hábitos
+        consistentes. Foi pensando nisso que comecei a desenvolver meus guias práticos —
+        o primeiro deles já está disponível.
       </p>
     </div>
   </section>
@@ -123,7 +218,7 @@
         <div class="about__photo" aria-hidden="true">MS</div>
       </div>
       <div class="about__content reveal">
-        <span class="eyebrow">Quem escreve esse ebook</span>
+        <span class="eyebrow">Quem escreve esses conteúdos</span>
         <h2>Oi, eu sou o Marcio Souza</h2>
         <p>
           Sou bacharel em <strong>Educação Física</strong> e em <strong>Nutrição</strong>,
@@ -136,50 +231,78 @@
         </p>
         <p>
           Decidi tirar esse conhecimento das quatro paredes do consultório e da academia
-          e colocar em um material que qualquer pessoa possa consultar, no seu próprio
-          ritmo, de qualquer lugar.
+          e transformar em guias práticos que qualquer pessoa possa consultar, no seu
+          próprio ritmo, de qualquer lugar.
         </p>
-        <p>É isso que você vai encontrar no <strong>Reeduque-se</strong>.</p>
+        <p>O primeiro deles é o <strong>Guia Prático para quem vive com menos tempo, mais resultado</strong> — e outros já estão a caminho.</p>
       </div>
     </div>
   </section>
 
-  <!-- O QUE TEM NO EBOOK -->
-  <section class="section content-list" id="conteudo">
+  <!-- ================================================================== -->
+  <!-- PRODUTO EM DESTAQUE: Guia Prático para quem vive com menos tempo,   -->
+  <!-- mais resultado. Ao lançar um novo guia, duplique este bloco de     -->
+  <!-- seções (do "product-head" até o "guarantee") e ajuste o conteúdo.  -->
+  <!-- ================================================================== -->
+
+  <!-- CABEÇALHO DO PRODUTO -->
+  <section class="section product-head" id="guia-menos-tempo">
+    <div class="container product-head__inner">
+      <div class="product-head__media reveal">
+        <!-- Imagem editável: troque o arquivo em /img -->
+        <img src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado" class="product-head__image">
+      </div>
+      <div class="product-head__content reveal">
+        <span class="eyebrow">Guia disponível agora</span>
+        <h2 class="product-head__title">
+          Guia Prático para quem vive com<br>
+          <span class="text-gradient">menos tempo,</span><br>
+          mais resultado
+        </h2>
+        <p class="product-head__tagline">
+          O guia direto ao ponto para emagrecer de verdade — mesmo com a agenda mais lotada do mundo.
+        </p>
+        <a href="#comprar" class="btn btn--primary btn--large">Quero adquirir agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE TEM NO GUIA -->
+  <section class="section content-list">
     <div class="container">
-      <span class="eyebrow center reveal">Dentro do ebook</span>
-      <h2 class="section__title reveal">O que você vai aprender no Reeduque-se</h2>
+      <span class="eyebrow center reveal">Dentro do guia</span>
+      <h2 class="section__title reveal">O que você vai encontrar</h2>
 
       <div class="modules">
         <div class="module reveal">
           <span class="module__number">01</span>
-          <h3>Fundamentos da nutrição sem mistério</h3>
-          <p>Entenda macronutrientes, calorias e como montar seu prato sem precisar virar nutricionista.</p>
+          <h3>Diagnóstico rápido da sua rotina</h3>
+          <p>Entenda em poucos minutos onde a sua rotina está dificultando sua alimentação.</p>
         </div>
         <div class="module reveal">
           <span class="module__number">02</span>
-          <h3>Emagrecimento sustentável</h3>
-          <p>Estratégias para promover mudanças graduais e sustentáveis na alimentação, sem dietas restritivas.</p>
+          <h3>Prioridades que realmente importam</h3>
+          <p>Foque no que gera mais impacto quando o tempo disponível é curto.</p>
         </div>
         <div class="module reveal">
           <span class="module__number">03</span>
-          <h3>Treino inteligente em qualquer lugar</h3>
-          <p>Protocolos de treino para academia ou casa, com foco em progresso e consistência.</p>
+          <h3>Refeições práticas para o dia a dia</h3>
+          <p>Opções rápidas de montar, sem depender de preparo longo ou complicado.</p>
         </div>
         <div class="module reveal">
           <span class="module__number">04</span>
-          <h3>Hábitos que ficam</h3>
-          <p>Como criar rotina de sono, água e alimentação que sobrevive à vida real — não só à motivação inicial.</p>
+          <h3>Treino expresso</h3>
+          <p>Protocolos curtos de treino para dias cheios, em casa ou na academia.</p>
         </div>
         <div class="module reveal">
           <span class="module__number">05</span>
-          <h3>Mitos que sabotam seu progresso</h3>
-          <p>Desmistificando as informações erradas que você provavelmente já ouviu por aí.</p>
+          <h3>Erros comuns de quem tem pouco tempo</h3>
+          <p>O que costuma sabotar o progresso de quem vive com a agenda lotada.</p>
         </div>
         <div class="module reveal">
           <span class="module__number">06</span>
-          <h3>Plano de ação de 30 dias</h3>
-          <p>Um passo a passo para você aplicar tudo isso desde o primeiro dia, sem travar.</p>
+          <h3>Plano de ação direto ao ponto</h3>
+          <p>Um passo a passo simples para você aplicar hoje mesmo, sem complicação.</p>
         </div>
       </div>
     </div>
@@ -189,16 +312,16 @@
   <section class="section audience">
     <div class="container audience__inner">
       <div class="audience__col reveal">
-        <h3>Para quem este material foi desenvolvido</h3>
+        <h3>Para quem este guia foi desenvolvido</h3>
         <ul class="check-list">
-          <li>Pessoas interessadas em melhorar a alimentação no dia a dia</li>
-          <li>Quem deseja compreender conceitos básicos de nutrição e treino</li>
-          <li>Iniciantes na prática de exercícios físicos</li>
+          <li>Pessoas com rotina corrida que querem organizar a alimentação</li>
+          <li>Quem já tentou dietas complicadas e não conseguiu manter</li>
+          <li>Iniciantes que precisam de um ponto de partida direto ao ponto</li>
           <li>Pessoas que buscam informações baseadas em evidências científicas</li>
         </ul>
       </div>
       <div class="audience__col reveal">
-        <h3>O que este ebook não faz</h3>
+        <h3>O que este guia não faz</h3>
         <ul class="cross-list">
           <li>Não substitui consulta nutricional individualizada</li>
           <li>Não realiza diagnóstico nem prescrição de dieta personalizada</li>
@@ -223,23 +346,23 @@
       <div class="testimonials__grid">
         <div class="testimonial reveal">
           <div class="stars">★★★★★</div>
-          <p>"Depois de anos recebendo informações contraditórias, o Reeduque-se foi o primeiro material que me ajudou a entender minha alimentação de forma clara."</p>
+          <p>"Depois de anos recebendo informações contraditórias, esse guia foi o primeiro material que me ajudou a entender minha alimentação de forma clara."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar">CA</div>
             <div>
               <strong>Carla A.</strong>
-              <span>Leitora do ebook</span>
+              <span>Leitora do guia</span>
             </div>
           </div>
         </div>
         <div class="testimonial reveal">
           <div class="stars">★★★★★</div>
-          <p>"Material muito didático. Consegui aplicar os treinos em casa mesmo sem ter muito tempo disponível."</p>
+          <p>"Consegui aplicar mesmo com a rotina corrida, sem precisar de muito tempo para organizar as refeições."</p>
           <div class="testimonial__author">
             <div class="testimonial__avatar">RM</div>
             <div>
               <strong>Rodrigo M.</strong>
-              <span>Leitor do ebook</span>
+              <span>Leitor do guia</span>
             </div>
           </div>
         </div>
@@ -250,7 +373,7 @@
             <div class="testimonial__avatar">JP</div>
             <div>
               <strong>Juliana P.</strong>
-              <span>Leitora do ebook</span>
+              <span>Leitora do guia</span>
             </div>
           </div>
         </div>
@@ -258,30 +381,35 @@
     </div>
   </section>
 
-  <!-- OFERTA -->
-  <section class="section offer" id="oferta">
+  <!-- COMPRAR -->
+  <section class="section offer" id="comprar">
     <div class="container offer__inner">
-      <span class="eyebrow center reveal">E-book digital</span>
-      <h2 class="section__title reveal">Adquira o ebook Reeduque-se</h2>
+      <span class="eyebrow center reveal">Guia digital</span>
+      <h2 class="section__title reveal">Adquira o guia agora</h2>
       <p class="offer__subtitle reveal">Acesso imediato após a confirmação da compra. Leia no celular, tablet ou computador.</p>
 
       <div class="offer__card reveal">
         <div class="offer__bonuses">
           <h3>Ao adquirir, você recebe:</h3>
           <ul class="check-list">
-            <li>Ebook completo <strong>Reeduque-se</strong> (PDF)</li>
-            <li><strong>Bônus 1:</strong> Planilha de acompanhamento de hábitos</li>
-            <li><strong>Bônus 2:</strong> Guia rápido de substituições alimentares</li>
-            <li><strong>Bônus 3:</strong> Checklist de treino para imprimir</li>
+            <li>Guia completo <strong>Menos tempo, mais resultado</strong> (PDF)</li>
+            <li><strong>Bônus 1:</strong> Cardápio expresso pronto para usar</li>
+            <li><strong>Bônus 2:</strong> Checklist de treino de 15 minutos</li>
+            <li><strong>Bônus 3:</strong> Planilha de rotina semanal</li>
           </ul>
         </div>
 
         <div class="offer__price-box">
-          <span class="offer__old-price">De R$ 97,00</span>
-          <span class="offer__price">R$ <strong>47</strong>,90</span>
-          <span class="offer__installments">ou 12x no cartão</span>
+          <span class="offer__old-price">De R$ 67,00</span>
+          <span class="offer__price">R$ <strong>29</strong>,90</span>
+          <span class="offer__installments">ou 6x no cartão</span>
 
-          <a href="#" class="btn btn--primary btn--large offer__cta">Quero adquirir o ebook</a>
+          <!--
+            LINK DE PAGAMENTO: substitua o href="#" abaixo pelo link gerado
+            no Mercado Pago (Cobrar > Link de pagamento) ou pelo link de
+            checkout da plataforma que você escolher (Hotmart, Kiwify, etc).
+          -->
+          <a href="#" class="btn btn--primary btn--large offer__cta" target="_blank" rel="noopener">Comprar agora com Mercado Pago</a>
           <span class="offer__secure">🔒 Pagamento seguro · Acesso imediato</span>
         </div>
       </div>
@@ -305,7 +433,7 @@
       <div class="accordion" id="accordion">
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Como recebo o ebook depois da compra?
+            Como recebo o guia depois da compra?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
@@ -314,11 +442,11 @@
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Preciso de acompanhamento presencial para aplicar o conteúdo?
+            Funciona mesmo se eu tiver pouco tempo no dia a dia?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Não. O ebook foi escrito para ser consultado de forma independente, com linguagem simples e passo a passo prático.</p>
+            <p>Sim. Esse guia foi desenvolvido justamente para rotinas corridas, com orientações diretas e rápidas de aplicar.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
@@ -341,11 +469,20 @@
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            O ebook substitui consulta com nutricionista ou educador físico?
+            O guia substitui consulta com nutricionista ou educador físico?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
             <p>Não. O material tem finalidade exclusivamente educativa e não substitui diagnóstico, prescrição individualizada ou acompanhamento profissional. Consulte um nutricionista ou educador físico sempre que necessário.</p>
+          </div>
+        </div>
+        <div class="accordion__item reveal">
+          <button class="accordion__trigger">
+            Vão sair novos conteúdos além deste guia?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Sim. Este é o primeiro de uma série de guias práticos que estou desenvolvendo. Novos materiais serão adicionados ao catálogo conforme forem lançados.</p>
           </div>
         </div>
       </div>
@@ -355,9 +492,9 @@
   <!-- CTA FINAL -->
   <section class="section final-cta">
     <div class="container final-cta__inner reveal">
-      <h2>Invista em conhecimento para compreender melhor sua alimentação e seus hábitos</h2>
-      <p>Tenha esse conteúdo educativo em mãos e aplique no seu próprio ritmo.</p>
-      <a href="#oferta" class="btn btn--primary btn--large">Quero acessar o conteúdo</a>
+      <h2>Comece pelo guia que já está disponível</h2>
+      <p>Novos conteúdos serão adicionados aqui conforme forem lançados. Garanta agora o Guia Prático para quem vive com menos tempo, mais resultado.</p>
+      <a href="#comprar" class="btn btn--primary btn--large">Quero o guia agora</a>
     </div>
   </section>
 
@@ -375,7 +512,7 @@
 
     <div class="footer__links">
       <a href="#sobre">Sobre mim</a>
-      <a href="#conteudo">O ebook</a>
+      <a href="#produtos">Produtos</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#faq">Dúvidas</a>
     </div>
@@ -393,7 +530,7 @@
   </div>
   <div class="container footer__bottom">
     <p>© <span id="year"></span> Marcio Souza. Todos os direitos reservados.</p>
-    <p class="footer__disclaimer">Este material tem finalidade exclusivamente educativa e não substitui orientação médica ou nutricional individualizada.</p>
+    <p class="footer__disclaimer">Estes materiais têm finalidade exclusivamente educativa e não substituem orientação médica ou nutricional individualizada.</p>
   </div>
 </footer>
 

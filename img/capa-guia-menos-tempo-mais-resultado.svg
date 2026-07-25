@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="titulo">
+  <title id="titulo">Capa do Guia Prático para quem vive com menos tempo, mais resultado</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1db98a"/>
+      <stop offset="55%" stop-color="#149a71"/>
+      <stop offset="100%" stop-color="#0c6b4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="960" fill="url(#bg)"/>
+
+  <g transform="translate(566,96)" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.85">
+    <circle cx="0" cy="24" r="46"/>
+    <line x1="0" y1="24" x2="0" y2="-2"/>
+    <line x1="0" y1="24" x2="20" y2="24"/>
+    <line x1="-14" y1="-34" x2="14" y2="-34"/>
+    <line x1="0" y1="-34" x2="0" y2="-22"/>
+  </g>
+
+  <text x="70" y="140" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="4" fill="#eafff5" font-weight="700">EBOOK DIGITAL</text>
+
+  <text x="70" y="210" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#ffffff" font-weight="800">GUIA PRÁTICO</text>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <tspan x="70" y="300" font-size="30" fill="#eafff5">PARA QUEM VIVE COM</tspan>
+    <tspan x="70" y="368" font-size="54" fill="#ffffff">MENOS TEMPO,</tspan>
+    <tspan x="70" y="436" font-size="54" fill="#ffd9a8">MAIS RESULTADO</tspan>
+  </text>
+
+  <text x="70" y="500" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#eafff5" opacity="0.9">
+    <tspan x="70" dy="0">O guia direto ao ponto para</tspan>
+    <tspan x="70" dy="30">emagrecer de verdade — mesmo</tspan>
+    <tspan x="70" dy="30">com a agenda mais lotada do mundo.</tspan>
+  </text>
+
+  <line x1="70" y1="810" x2="300" y2="810" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
+  <text x="70" y="852" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff" font-weight="700">Marcio Souza</text>
+  <text x="70" y="884" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#eafff5" opacity="0.85">Educação Física &amp; Nutrição</text>
+</svg>
