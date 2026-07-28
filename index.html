@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marcio Souza | Nutricionista CRN-PR 19532 — Conteúdos e Consultoria Online</title>
-<meta name="description" content="Marcio Souza, nutricionista (CRN-PR 19532) com Prática Baseada em Evidência. Conteúdos sobre nutrição, saúde e exercício físico, guias digitais e consultoria online.">
+<title>Marcio Souza | Nutricionista CRN-PR 19532 — Consultoria Online</title>
+<meta name="description" content="Marcio Souza, nutricionista (CRN-PR 19532) com Prática Baseada em Evidência. Consultoria nutricional 100% online para emagrecimento, hipertrofia e saúde duradoura.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,34 +16,28 @@
   ============================================================================
   COMO ESSA PÁGINA FUNCIONA (leia antes de editar)
   ============================================================================
-  Esta página foi pensada como uma VITRINE DE CONTEÚDOS, não apenas a venda
-  de um único ebook. Hoje existe 1 produto disponível ("Guia Prático para
-  quem vive com menos tempo, mais resultado"). Conforme você for lançando
-  novos guias, adicione novos cards na seção "Catálogo" (#produtos) e, se
-  quiser, uma nova seção de detalhes/venda para cada novo produto.
+  Posicionamento: Marcio Souza, nutricionista, é o protagonista da página.
+  O e-book aparece em UMA seção própria (#ebook), com fundo diferenciado,
+  como produto complementar — ele não compete com a apresentação do
+  profissional nem com a consultoria.
 
-  O QUE EDITAR PARA CADA PRODUTO:
-  - Imagem de capa   -> pasta /img (troque o arquivo .svg por um .jpg/.png
-                         com o mesmo nome, ou atualize o "src" das tags <img>)
-  - Preço            -> dentro da seção "Comprar" (id="comprar")
-  - Link de compra   -> botão com o comentário "LINK DE PAGAMENTO" abaixo
+  IMAGENS DA MARCA (pasta /img) — salve com esses nomes exatos:
+  - logo-marcio-souza.png -> sua logo (header e rodapé)
+  - foto-marcio-souza.jpg -> sua foto (hero e prova de autoridade)
+  - capa-guia-menos-tempo-mais-resultado.svg -> capa do e-book (troque por
+    um mockup .png/.jpg quando tiver a arte final)
 
-  IMAGENS DA MARCA (pasta /img):
-  - logo-marcio-souza.png -> sua logo (usada no header e no rodapé)
-  - foto-marcio-souza.jpg -> sua foto (usada em "Sobre mim" e "Consultoria")
-  Salve os arquivos com esses nomes exatos dentro da pasta /img.
+  WHATSAPP: procure por "55XXXXXXXXXXX" neste arquivo e troque pelo seu
+  número real, no formato DDI+DDD+número (ex: 5541999998888). É usado no
+  botão "Agendar consulta", nos cards de serviço, na timeline, no CTA
+  final e no botão flutuante.
 
-  WHATSAPP: procure por "55XXXXXXXXXXX" neste arquivo (3 ocorrências) e
-  troque pelo seu número real, no formato DDI+DDD+número (ex: 5541999998888).
+  LINK DE PAGAMENTO DO E-BOOK: procure por "LINK DE PAGAMENTO" na seção
+  #ebook e cole o link gerado no Mercado Pago (Cobrar > Link de pagamento)
+  ou da plataforma de sua escolha.
 
-  COMO GERAR O LINK DE PAGAMENTO (Mercado Pago):
-  1. Acesse sua conta Mercado Pago > Cobrar > Link de pagamento
-  2. Crie um link para o produto, com o preço definido
-  3. Copie o link gerado (algo como https://mpago.la/xxxxxxx)
-  4. Cole no "href" do botão "Comprar agora" (procure por LINK DE PAGAMENTO)
-  Alternativa: plataformas como Hotmart, Kiwify ou Eduzz entregam o PDF
-  automaticamente por e-mail após o pagamento — vale avaliar se você quer
-  entrega automática do arquivo.
+  QUANDO LANÇAR NOVOS PRODUTOS DIGITAIS: duplique a seção "#ebook" logo
+  abaixo dela mesma, dê um novo id e ajuste o conteúdo.
   ============================================================================
 -->
 
@@ -54,14 +48,15 @@
     <a href="#topo" class="logo"><img src="img/logo-marcio-souza.png" alt="Marcio Souza Nutricionista" class="logo-img"></a>
 
     <nav class="nav" id="nav">
-      <a href="#sobre" class="nav__link">Sobre mim</a>
-      <a href="#produtos" class="nav__link">Produtos</a>
-      <a href="#consultoria" class="nav__link">Consultoria</a>
+      <a href="#autoridade" class="nav__link">Sobre</a>
+      <a href="#servicos" class="nav__link">Serviços</a>
+      <a href="#ebook" class="nav__link">E-book</a>
       <a href="#depoimentos" class="nav__link">Depoimentos</a>
       <a href="#faq" class="nav__link">Dúvidas</a>
     </nav>
 
-    <a href="#comprar" class="btn btn--primary btn--small header__cta">Comprar agora</a>
+    <!-- Troque "55XXXXXXXXXXX" pelo seu número de WhatsApp -->
+    <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn btn--cta btn--sm header__cta" target="_blank" rel="noopener">Agendar consulta</a>
 
     <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -71,502 +66,385 @@
 
 <main id="topo">
 
-  <!-- HERO -->
+  <!-- ============================================================ -->
+  <!-- 1. HERO -->
+  <!-- ============================================================ -->
   <section class="hero">
-    <div class="container hero__inner">
+    <span class="hero__blob hero__blob--1" aria-hidden="true"></span>
+    <span class="hero__blob hero__blob--2" aria-hidden="true"></span>
+
+    <div class="container hero__grid">
       <div class="hero__content reveal">
-        <span class="badge">🥗 Nutricionista CRN-PR 19532</span>
-        <h1>Conteúdos práticos sobre nutrição, saúde e exercício físico, direto da <span class="text-gradient">prática baseada em evidência</span></h1>
+        <span class="eyebrow-badge">Marcio Souza — Nutricionista CRN-PR 19532</span>
+        <h1>Cuide da sua saúde com ciência, não com modismos.</h1>
         <p class="hero__subtitle">
-          Aqui você encontra conteúdos sobre nutrição, exercício físico e saúde escritos por
-          um nutricionista — e, se preferir um acompanhamento individual, também atendo
-          pacientes de forma online.
+          Nutrição baseada em evidências para emagrecimento, performance e saúde
+          duradoura — com atendimento 100% online.
         </p>
 
-        <ul class="hero__points">
-          <li>✅ Conteúdo baseado em evidências científicas</li>
-          <li>✅ Escrito por um nutricionista (CRN-PR 19532)</li>
-          <li>✅ Linguagem clara e direta ao ponto</li>
-        </ul>
-
         <div class="hero__actions">
-          <a href="#comprar" class="btn btn--primary btn--large">Quero o guia disponível agora</a>
-          <a href="#consultoria" class="btn btn--ghost btn--large">Quero ser paciente</a>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn btn--cta btn--lg" target="_blank" rel="noopener">Agendar consulta</a>
+          <a href="#ebook" class="btn btn--outline btn--lg">Conhecer o e-book</a>
         </div>
 
-        <div class="hero__trust">
-          <span>📚 Novos guias sendo desenvolvidos com regularidade</span>
+        <div class="hero__meta">
+          <span>🔬 Prática Baseada em Evidência</span>
+          <span>🖥️ Atendimento 100% online</span>
         </div>
       </div>
 
       <div class="hero__media reveal">
-        <div class="ebook-mock">
+        <div class="hero__photo-frame">
           <!-- Imagem editável: troque o arquivo em /img -->
-          <img class="ebook-mock__cover-img" src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado">
-          <div class="ebook-mock__shadow"></div>
+          <img src="img/foto-marcio-souza.jpg" alt="Marcio Souza, nutricionista" class="hero__photo">
+          <span class="hero__photo-chip">CRN-PR 19532</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAIXA DE AUTORIDADE -->
-  <section class="strip">
-    <div class="container strip__inner">
-      <span>🥗 Nutricionista — CRN-PR 19532</span>
-      <span>📖 Prática Baseada em Evidência</span>
-      <span>🖥️ Atendimento 100% online</span>
-      <span>🔒 Compra 100% segura</span>
-    </div>
-  </section>
-
-  <!-- CATÁLOGO DE PRODUTOS -->
-  <section class="section catalog" id="produtos">
+  <!-- ============================================================ -->
+  <!-- 2. PROVA DE AUTORIDADE -->
+  <!-- ============================================================ -->
+  <section class="section authority" id="autoridade">
     <div class="container">
-      <span class="eyebrow center reveal">Biblioteca de conteúdos</span>
-      <h2 class="section__title reveal center-title">Conteúdos disponíveis</h2>
-      <p class="catalog__subtitle reveal">
-        Estou desenvolvendo novos guias práticos sobre nutrição, treino e hábitos saudáveis.
-        Este catálogo será atualizado conforme novos materiais forem lançados.
-      </p>
-
-      <div class="catalog__grid">
-
-        <!-- PRODUTO 1 (disponível) -->
-        <article class="product-card reveal">
-          <span class="product-card__badge product-card__badge--live">Disponível</span>
-          <div class="product-card__image-wrap">
-            <img class="product-card__image" src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado">
-          </div>
-          <div class="product-card__body">
-            <h3>Guia Prático para quem vive com menos tempo, mais resultado</h3>
-            <p>O guia direto ao ponto para emagrecer de verdade — mesmo com a agenda mais lotada do mundo.</p>
-            <div class="product-card__footer">
-              <span class="product-card__price">R$ 29,90</span>
-              <a href="#guia-menos-tempo" class="btn btn--primary btn--small">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <!--
-          PRÓXIMOS PRODUTOS: para adicionar um novo produto quando ele
-          ficar pronto, copie o bloco <article class="product-card"> acima,
-          cole abaixo e troque imagem, título, descrição, preço e link.
-          Os dois cards abaixo são apenas placeholders de "em breve".
-        -->
-
-        <!-- PRODUTO 2 (em breve) -->
-        <article class="product-card product-card--soon reveal">
-          <span class="product-card__badge product-card__badge--soon">Em breve</span>
-          <div class="product-card__image-wrap">
-            <img class="product-card__image" src="img/em-breve.svg" alt="Novo conteúdo em produção">
-          </div>
-          <div class="product-card__body">
-            <h3>Novo guia em produção</h3>
-            <p>Mais um conteúdo prático sobre nutrição e treino está a caminho.</p>
-            <div class="product-card__footer">
-              <span class="product-card__price product-card__price--muted">Em breve</span>
-              <span class="btn btn--ghost btn--small" aria-disabled="true">Aguarde</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PRODUTO 3 (em breve) -->
-        <article class="product-card product-card--soon reveal">
-          <span class="product-card__badge product-card__badge--soon">Em breve</span>
-          <div class="product-card__image-wrap">
-            <img class="product-card__image" src="img/em-breve.svg" alt="Novo conteúdo em produção">
-          </div>
-          <div class="product-card__body">
-            <h3>Novo guia em produção</h3>
-            <p>Mais um conteúdo prático sobre nutrição e treino está a caminho.</p>
-            <div class="product-card__footer">
-              <span class="product-card__price product-card__price--muted">Em breve</span>
-              <span class="btn btn--ghost btn--small" aria-disabled="true">Aguarde</span>
-            </div>
-          </div>
-        </article>
-
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Formação e experiência</span>
+        <h2>Uma nutrição pautada em ciência</h2>
+        <p>Cada orientação — em consulta ou em conteúdo — parte de evidência científica, não de modismo.</p>
       </div>
+
+      <div class="authority__grid">
+        <div class="authority__card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg>
+          </span>
+          <h3>Formação</h3>
+          <p>Bacharel em Nutrição e em Educação Física</p>
+        </div>
+        <div class="authority__card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Registro profissional</h3>
+          <p>CRN-PR 19532</p>
+        </div>
+        <div class="authority__card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6l-5.5 9.5A1.8 1.8 0 0 0 6.1 21h11.8a1.8 1.8 0 0 0 1.6-2.5L14 9V3"/><path d="M7.5 15h9"/></svg>
+          </span>
+          <h3>Metodologia</h3>
+          <p>Prática Baseada em Evidência</p>
+        </div>
+        <div class="authority__card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </span>
+          <h3>Atendimento</h3>
+          <p>100% online, de qualquer lugar</p>
+        </div>
+      </div>
+      <!-- Quando confirmar pós-graduação, especializações ou cursos (ex: ISAK),
+           adicione um novo ".authority__card" seguindo o mesmo padrão acima. -->
     </div>
   </section>
 
-  <!-- CONTEXTO / DIFICULDADES COMUNS -->
-  <section class="section problem">
+  <!-- ============================================================ -->
+  <!-- 3. COMO POSSO TE AJUDAR -->
+  <!-- ============================================================ -->
+  <section class="section services" id="servicos">
     <div class="container">
-      <h2 class="section__title reveal">Por que é tão difícil manter uma alimentação saudável com uma rotina corrida?</h2>
-      <div class="problem__grid">
-        <div class="problem__card reveal">
-          <span class="problem__icon">🌀</span>
-          <p>Existe muita informação contraditória sobre nutrição e treino circulando na internet e nas redes sociais</p>
-        </div>
-        <div class="problem__card reveal">
-          <span class="problem__icon">⏳</span>
-          <p>Pouco tempo no dia a dia dificulta cozinhar, treinar e planejar as refeições com calma</p>
-        </div>
-        <div class="problem__card reveal">
-          <span class="problem__icon">🔁</span>
-          <p>Mudanças muito radicais costumam ser difíceis de manter a longo prazo</p>
-        </div>
-        <div class="problem__card reveal">
-          <span class="problem__icon">📚</span>
-          <p>Muitas vezes falta entender o motivo por trás de cada orientação alimentar</p>
-        </div>
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Como posso te ajudar</span>
+        <h2>Um cuidado nutricional pensado pra você</h2>
+        <p>Cada objetivo pede uma estratégia diferente. Veja onde posso te ajudar.</p>
       </div>
-      <p class="problem__bridge reveal">
-        Muitas pessoas encontram dificuldade porque recebem informações contraditórias, têm pouco
-        tempo no dia a dia e acabam não conseguindo transformar conhecimento em hábitos
-        consistentes. Foi pensando nisso que comecei a desenvolver meus guias práticos —
-        o primeiro deles já está disponível.
-      </p>
-    </div>
-  </section>
 
-  <!-- SOBRE O AUTOR -->
-  <section class="section about" id="sobre">
-    <div class="container about__inner">
-      <div class="about__media reveal">
-        <!-- Imagem editável: troque o arquivo em /img -->
-        <img src="img/foto-marcio-souza.jpg" alt="Marcio Souza, nutricionista" class="about__photo-img">
-      </div>
-      <div class="about__content reveal">
-        <span class="eyebrow">Quem escreve esses conteúdos</span>
-        <h2>Oi, eu sou o Marcio Souza</h2>
-        <p>
-          Sou <strong>nutricionista (CRN-PR 19532)</strong> e bacharel em <strong>Educação
-          Física</strong>, e passei anos atendendo pacientes e alunos dentro de clínicas e academias.
-        </p>
-        <p>
-          Trabalho com <strong>Prática Baseada em Evidência</strong>: ou seja, as orientações
-          que você encontra aqui — seja num guia digital, seja num atendimento individual —
-          são baseadas em ciência, não em modismo.
-        </p>
-        <p>
-          Nesse tempo, percebi o mesmo padrão se repetindo: as pessoas não precisavam de
-          mais uma dieta da moda ou de um treino "milagroso" — precisavam de conteúdo
-          simples, baseado em ciência, que coubesse na vida real delas.
-        </p>
-        <p>
-          Foi por isso que comecei a transformar esse conhecimento em guias práticos que
-          qualquer pessoa possa consultar, no seu próprio ritmo. E para quem prefere um
-          acompanhamento individual, também atendo pacientes <a href="#consultoria">de forma online</a>.
-        </p>
+      <div class="services__grid">
+        <div class="service-card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M5 7l-3 6a3 3 0 0 0 6 0l-3-6Zm14 0l-3 6a3 3 0 0 0 6 0l-3-6Z"/></svg>
+          </span>
+          <h3>Emagrecimento</h3>
+          <p>Estratégias nutricionais para emagrecer de forma sustentável, sem dietas restritivas.</p>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20emagrecimento" class="service-card__link" target="_blank" rel="noopener">Agendar →</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6M2 10v4M20 9v6M22 10v4M7 12h10"/><rect x="5" y="8" width="3" height="8" rx="1"/><rect x="16" y="8" width="3" height="8" rx="1"/></svg>
+          </span>
+          <h3>Hipertrofia e performance</h3>
+          <p>Nutrição para ganho de massa muscular e melhora de desempenho físico.</p>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20hipertrofia%20e%20performance" class="service-card__link" target="_blank" rel="noopener">Agendar →</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
+          </span>
+          <h3>Nutrição esportiva</h3>
+          <p>Ajustes alimentares para quem treina com foco em desempenho e recuperação.</p>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20nutri%C3%A7%C3%A3o%20esportiva" class="service-card__link" target="_blank" rel="noopener">Agendar →</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C10 4 4 10 4 18c8 0 14-6 14-14Z"/><path d="M9 15c3-3 6-6 9-9"/></svg>
+          </span>
+          <h3>Reeducação alimentar</h3>
+          <p>Construção de hábitos alimentares saudáveis e duradouros, no seu ritmo.</p>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20reeduca%C3%A7%C3%A3o%20alimentar" class="service-card__link" target="_blank" rel="noopener">Agendar →</a>
+        </div>
+        <div class="service-card reveal">
+          <span class="icon-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          </span>
+          <h3>Consulta online</h3>
+          <p>Atendimento nutricional individual, 100% online, de qualquer lugar do Brasil.</p>
+          <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta%20online" class="service-card__link" target="_blank" rel="noopener">Agendar →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CONSULTORIA ONLINE -->
-  <section class="section consulting" id="consultoria">
-    <div class="container consulting__inner">
-      <div class="consulting__content reveal">
-        <span class="eyebrow">Atendimento individual</span>
-        <h2>Quer um acompanhamento nutricional personalizado?</h2>
-        <p class="consulting__lead">
-          Além dos guias digitais, também atendo pacientes de forma 100% online, com plano
-          alimentar personalizado e acompanhamento contínuo — sempre com Prática Baseada em Evidência.
-        </p>
-
-        <ol class="consulting__steps">
-          <li>
-            <span class="consulting__step-number">1</span>
-            <div>
-              <h3>Agendamento</h3>
-              <p>Você agenda sua consulta online, no dia e horário que forem melhores pra você.</p>
-            </div>
-          </li>
-          <li>
-            <span class="consulting__step-number">2</span>
-            <div>
-              <h3>Anamnese completa</h3>
-              <p>Conversamos sobre seu histórico, rotina, objetivos e preferências alimentares.</p>
-            </div>
-          </li>
-          <li>
-            <span class="consulting__step-number">3</span>
-            <div>
-              <h3>Plano alimentar personalizado</h3>
-              <p>Você recebe uma orientação nutricional individualizada, feita sob medida para você.</p>
-            </div>
-          </li>
-          <li>
-            <span class="consulting__step-number">4</span>
-            <div>
-              <h3>Acompanhamento</h3>
-              <p>Retornos periódicos para ajustar o plano e acompanhar sua evolução.</p>
-            </div>
-          </li>
-        </ol>
-
-        <!--
-          LINK DE CONTATO: troque "55XXXXXXXXXXX" pelo seu número de WhatsApp
-          com DDI+DDD (ex: 5541999998888). O mesmo número deve ser usado no
-          botão flutuante de WhatsApp no fim da página.
-        -->
-        <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20ser%20paciente%20e%20saber%20mais%20sobre%20a%20consultoria%20online" class="btn btn--primary btn--large" target="_blank" rel="noopener">Quero ser paciente</a>
-      </div>
-
-      <div class="consulting__media reveal">
-        <!-- Imagem editável: troque o arquivo em /img -->
-        <img src="img/foto-marcio-souza.jpg" alt="Marcio Souza, nutricionista" class="consulting__photo">
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================================== -->
-  <!-- PRODUTO EM DESTAQUE: Guia Prático para quem vive com menos tempo,   -->
-  <!-- mais resultado. Ao lançar um novo guia, duplique este bloco de     -->
-  <!-- seções (do "product-head" até o "guarantee") e ajuste o conteúdo.  -->
-  <!-- ================================================================== -->
-
-  <!-- CABEÇALHO DO PRODUTO -->
-  <section class="section product-head" id="guia-menos-tempo">
-    <div class="container product-head__inner">
-      <div class="product-head__media reveal">
-        <!-- Imagem editável: troque o arquivo em /img -->
-        <img src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado" class="product-head__image">
-      </div>
-      <div class="product-head__content reveal">
-        <span class="eyebrow">Guia disponível agora</span>
-        <h2 class="product-head__title">
-          Guia Prático para quem vive com<br>
-          <span class="text-gradient">menos tempo,</span><br>
-          mais resultado
-        </h2>
-        <p class="product-head__tagline">
-          O guia direto ao ponto para emagrecer de verdade — mesmo com a agenda mais lotada do mundo.
-        </p>
-        <a href="#comprar" class="btn btn--primary btn--large">Quero adquirir agora</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- O QUE TEM NO GUIA -->
-  <section class="section content-list">
+  <!-- ============================================================ -->
+  <!-- 4. E-BOOK (produto digital complementar — seção separada) -->
+  <!-- ============================================================ -->
+  <section class="section ebook-section" id="ebook">
     <div class="container">
-      <span class="eyebrow center reveal">Dentro do guia</span>
-      <h2 class="section__title reveal">O que você vai encontrar</h2>
-
-      <div class="modules">
-        <div class="module reveal">
-          <span class="module__number">01</span>
-          <h3>Diagnóstico rápido da sua rotina</h3>
-          <p>Entenda em poucos minutos onde a sua rotina está dificultando sua alimentação.</p>
-        </div>
-        <div class="module reveal">
-          <span class="module__number">02</span>
-          <h3>Prioridades que realmente importam</h3>
-          <p>Foque no que gera mais impacto quando o tempo disponível é curto.</p>
-        </div>
-        <div class="module reveal">
-          <span class="module__number">03</span>
-          <h3>Refeições práticas para o dia a dia</h3>
-          <p>Opções rápidas de montar, sem depender de preparo longo ou complicado.</p>
-        </div>
-        <div class="module reveal">
-          <span class="module__number">04</span>
-          <h3>Treino expresso</h3>
-          <p>Protocolos curtos de treino para dias cheios, em casa ou na academia.</p>
-        </div>
-        <div class="module reveal">
-          <span class="module__number">05</span>
-          <h3>Erros comuns de quem tem pouco tempo</h3>
-          <p>O que costuma sabotar o progresso de quem vive com a agenda lotada.</p>
-        </div>
-        <div class="module reveal">
-          <span class="module__number">06</span>
-          <h3>Plano de ação direto ao ponto</h3>
-          <p>Um passo a passo simples para você aplicar hoje mesmo, sem complicação.</p>
-        </div>
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Conteúdo digital</span>
+        <h2>Prefere começar sozinho? Comece pelo e-book</h2>
+        <p>Um material complementar à consulta, para quem quer já dar o primeiro passo.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- PARA QUEM É / LIMITAÇÕES DO MATERIAL -->
-  <section class="section audience">
-    <div class="container audience__inner">
-      <div class="audience__col reveal">
-        <h3>Para quem este guia foi desenvolvido</h3>
-        <ul class="check-list">
-          <li>Pessoas com rotina corrida que querem organizar a alimentação</li>
-          <li>Quem já tentou dietas complicadas e não conseguiu manter</li>
-          <li>Iniciantes que precisam de um ponto de partida direto ao ponto</li>
-          <li>Pessoas que buscam informações baseadas em evidências científicas</li>
-        </ul>
-      </div>
-      <div class="audience__col reveal">
-        <h3>O que este guia não faz</h3>
-        <ul class="cross-list">
-          <li>Não substitui consulta nutricional individualizada</li>
-          <li>Não realiza diagnóstico nem prescrição de dieta personalizada</li>
-          <li>Não substitui acompanhamento médico</li>
-          <li>Tem finalidade exclusivamente educativa</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTOS -->
-  <!--
-    Os depoimentos abaixo são exemplos ilustrativos de layout.
-    Antes de publicar, substitua por depoimentos reais, com autorização
-    expressa de quem os concedeu, evitando promessas de resultado.
-  -->
-  <section class="section testimonials" id="depoimentos">
-    <div class="container">
-      <span class="eyebrow center reveal">O que dizem os leitores</span>
-      <h2 class="section__title reveal">Quem leu, recomenda</h2>
-
-      <div class="testimonials__grid">
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Depois de anos recebendo informações contraditórias, esse guia foi o primeiro material que me ajudou a entender minha alimentação de forma clara."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">CA</div>
-            <div>
-              <strong>Carla A.</strong>
-              <span>Leitora do guia</span>
-            </div>
-          </div>
+      <div class="ebook-card reveal">
+        <div class="ebook-card__media">
+          <!-- Imagem editável: troque o arquivo em /img -->
+          <img src="img/capa-guia-menos-tempo-mais-resultado.svg" alt="Capa do Guia Prático para quem vive com menos tempo, mais resultado" class="ebook-card__cover">
         </div>
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Consegui aplicar mesmo com a rotina corrida, sem precisar de muito tempo para organizar as refeições."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">RM</div>
-            <div>
-              <strong>Rodrigo M.</strong>
-              <span>Leitor do guia</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>"O que mais gostei foi entender o motivo por trás de cada orientação. Não é uma dieta pronta, é conhecimento que eu levo para o dia a dia."</p>
-          <div class="testimonial__author">
-            <div class="testimonial__avatar">JP</div>
-            <div>
-              <strong>Juliana P.</strong>
-              <span>Leitora do guia</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- COMPRAR -->
-  <section class="section offer" id="comprar">
-    <div class="container offer__inner">
-      <span class="eyebrow center reveal">Guia digital</span>
-      <h2 class="section__title reveal">Adquira o guia agora</h2>
-      <p class="offer__subtitle reveal">Acesso imediato após a confirmação da compra. Leia no celular, tablet ou computador.</p>
+        <div class="ebook-card__content">
+          <span class="ebook-card__kicker">Guia digital em PDF</span>
+          <h3>Guia Prático para quem vive com menos tempo, mais resultado</h3>
+          <p class="ebook-card__tagline">O guia direto ao ponto para emagrecer de verdade — mesmo com a agenda mais lotada do mundo.</p>
 
-      <div class="offer__card reveal">
-        <div class="offer__bonuses">
-          <h3>Ao adquirir, você recebe:</h3>
-          <ul class="check-list">
-            <li>Guia completo <strong>Menos tempo, mais resultado</strong> (PDF)</li>
-            <li><strong>Bônus 1:</strong> Cardápio expresso pronto para usar</li>
-            <li><strong>Bônus 2:</strong> Checklist de treino de 15 minutos</li>
-            <li><strong>Bônus 3:</strong> Planilha de rotina semanal</li>
+          <ul class="ebook-card__benefits">
+            <li>Diagnóstico rápido da sua rotina</li>
+            <li>Prioridades que realmente importam</li>
+            <li>Refeições práticas para o dia a dia</li>
+            <li>Treino expresso para dias cheios</li>
+            <li>Plano de ação direto ao ponto</li>
           </ul>
-        </div>
 
-        <div class="offer__price-box">
-          <span class="offer__old-price">De R$ 67,00</span>
-          <span class="offer__price">R$ <strong>29</strong>,90</span>
-          <span class="offer__installments">ou 6x no cartão</span>
+          <p class="ebook-card__bonus">
+            <strong>+ 3 bônus:</strong> cardápio expresso, checklist de treino de 15 min e planilha de rotina semanal.
+          </p>
 
-          <!--
-            LINK DE PAGAMENTO: substitua o href="#" abaixo pelo link gerado
-            no Mercado Pago (Cobrar > Link de pagamento) ou pelo link de
-            checkout da plataforma que você escolher (Hotmart, Kiwify, etc).
-          -->
-          <a href="#" class="btn btn--primary btn--large offer__cta" target="_blank" rel="noopener">Comprar agora com Mercado Pago</a>
-          <span class="offer__secure">🔒 Pagamento seguro · Acesso imediato</span>
-        </div>
-      </div>
+          <div class="ebook-card__buy">
+            <div class="ebook-card__price">
+              <span class="ebook-card__old-price">De R$ 67,00</span>
+              <span class="ebook-card__new-price">R$ 29,90</span>
+              <span class="ebook-card__installments">ou 6x no cartão</span>
+            </div>
+            <!--
+              LINK DE PAGAMENTO: substitua o href="#" pelo link gerado no
+              Mercado Pago (Cobrar > Link de pagamento) ou da plataforma
+              de sua escolha (Hotmart, Kiwify, etc).
+            -->
+            <a href="#" class="btn btn--cta btn--lg" target="_blank" rel="noopener">Quero o e-book agora</a>
+          </div>
 
-      <div class="guarantee reveal">
-        <span class="guarantee__seal">🛡️</span>
-        <div>
-          <strong>Garantia de 7 dias</strong>
-          <p>Conforme o Código de Defesa do Consumidor e a política da plataforma de pagamento, você tem até 7 dias após a compra para solicitar reembolso integral.</p>
+          <p class="ebook-card__guarantee">🛡️ Garantia de 7 dias, conforme o Código de Defesa do Consumidor.</p>
+          <p class="ebook-card__disclaimer">Material com finalidade exclusivamente educativa — não substitui consulta nutricional individualizada.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- ============================================================ -->
+  <!-- 5. DEPOIMENTOS -->
+  <!-- ============================================================ -->
+  <!--
+    Os depoimentos abaixo são exemplos ilustrativos de layout, com avatares
+    placeholder (iniciais). Antes de publicar, substitua por depoimentos e
+    fotos reais, com autorização expressa de quem os concedeu, evitando
+    promessas de resultado quantificado (ex: números de peso perdido).
+  -->
+  <section class="section testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Depoimentos</span>
+        <h2>Quem já vivenciou, recomenda</h2>
+      </div>
+
+      <div class="carousel reveal">
+        <div class="carousel__track" id="carouselTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Aprendi a montar minhas refeições sem depender de dietas prontas. Hoje me sinto no controle da minha alimentação."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar">CA</span>
+              <div>
+                <strong>Carla A.</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Consegui organizar minha rotina alimentar mesmo com a agenda cheia. Fez toda diferença ter orientação profissional."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar">RM</span>
+              <div>
+                <strong>Rodrigo M.</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"O acompanhamento me ajudou a entender o motivo de cada orientação. Isso mudou minha relação com a comida."</p>
+            <div class="testimonial-card__author">
+              <span class="testimonial-card__avatar">JP</span>
+              <div>
+                <strong>Juliana P.</strong>
+                <span>Paciente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn" id="carouselPrev" aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <div class="carousel__dots" id="carouselDots"></div>
+          <button class="carousel__btn" id="carouselNext" aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. COMO FUNCIONA A CONSULTA -->
+  <!-- ============================================================ -->
+  <section class="section timeline-section" id="consulta">
+    <div class="container">
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Consulta online</span>
+        <h2>Como funciona o atendimento</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__step reveal">
+          <span class="timeline__number">1</span>
+          <h3>Agendamento</h3>
+          <p>Você agenda pelo WhatsApp, no dia e horário que forem melhores pra você.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__number">2</span>
+          <h3>Avaliação</h3>
+          <p>Conversamos sobre seu histórico, rotina, objetivos e preferências alimentares.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__number">3</span>
+          <h3>Plano alimentar</h3>
+          <p>Você recebe uma orientação nutricional individualizada, feita sob medida.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__number">4</span>
+          <h3>Acompanhamento</h3>
+          <p>Retornos periódicos para ajustar o plano e acompanhar sua evolução.</p>
+        </li>
+      </ol>
+
+      <div class="timeline__cta reveal">
+        <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn btn--cta btn--lg" target="_blank" rel="noopener">Agendar minha consulta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 7. FAQ -->
+  <!-- ============================================================ -->
   <section class="section faq" id="faq">
     <div class="container">
-      <span class="eyebrow center reveal">Dúvidas frequentes</span>
-      <h2 class="section__title reveal">Ainda com alguma dúvida?</h2>
+      <div class="section-header section-header--center reveal">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Ainda com alguma dúvida?</h2>
+      </div>
 
       <div class="accordion" id="accordion">
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Como recebo o guia depois da compra?
+            Como funciona a consulta online?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Logo após a confirmação do pagamento, você recebe o link de acesso por e-mail para baixar o material em PDF. É só abrir no celular, tablet ou computador.</p>
+            <p>O atendimento é feito por videochamada. Você agenda pelo WhatsApp, e a consulta acontece no dia e horário combinados, com a mesma qualidade de um atendimento presencial.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Funciona mesmo se eu tiver pouco tempo no dia a dia?
+            Quanto tempo dura a consulta?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Sim. Esse guia foi desenvolvido justamente para rotinas corridas, com orientações diretas e rápidas de aplicar.</p>
+            <p>A primeira consulta costuma durar entre 40 e 60 minutos, tempo suficiente para uma avaliação completa. Os retornos são mais objetivos.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Serve para iniciantes?
+            Terei acompanhamento depois da primeira consulta?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Sim! O conteúdo foi pensado justamente para quem está começando agora e se sente perdido com tanta informação contraditória.</p>
+            <p>Sim. O acompanhamento nutricional é feito com retornos periódicos, para ajustar o plano alimentar conforme sua evolução.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            E se eu não gostar do material?
+            O e-book substitui a consulta?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Você tem 7 dias de garantia, conforme o Código de Defesa do Consumidor. Se não fizer sentido pra você, devolvemos 100% do valor pago.</p>
+            <p>Não. O e-book tem finalidade educativa e é um bom ponto de partida, mas não substitui uma avaliação individual, com diagnóstico e plano alimentar personalizado.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            O guia substitui consulta com nutricionista ou educador físico?
+            Quais as formas de pagamento?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Não. O material tem finalidade exclusivamente educativa e não substitui diagnóstico, prescrição individualizada ou acompanhamento profissional. Consulte um nutricionista ou educador físico sempre que necessário.</p>
+            <p>Consultas: combinadas diretamente no agendamento pelo WhatsApp. E-book: pagamento online via Mercado Pago, com acesso imediato após a confirmação.</p>
           </div>
         </div>
         <div class="accordion__item reveal">
           <button class="accordion__trigger">
-            Vão sair novos conteúdos além deste guia?
+            Tenho suporte depois da compra ou da consulta?
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Sim. Este é o primeiro de uma série de guias práticos que estou desenvolvendo. Novos materiais serão adicionados ao catálogo conforme forem lançados.</p>
+            <p>Sim. Dúvidas sobre o e-book ou sobre o acompanhamento podem ser enviadas pelo WhatsApp a qualquer momento.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
+  <!-- ============================================================ -->
+  <!-- 8. CTA FINAL -->
+  <!-- ============================================================ -->
   <section class="section final-cta">
     <div class="container final-cta__inner reveal">
-      <h2>Comece pelo guia que já está disponível</h2>
-      <p>Novos conteúdos serão adicionados aqui conforme forem lançados. Garanta agora o Guia Prático para quem vive com menos tempo, mais resultado.</p>
-      <a href="#comprar" class="btn btn--primary btn--large">Quero o guia agora</a>
+      <h2>Pronto para cuidar da sua saúde com quem entende do assunto?</h2>
+      <p>Agende sua consulta online ou conheça o e-book e dê o primeiro passo hoje.</p>
+      <div class="final-cta__actions">
+        <a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta" class="btn btn--cta btn--lg" target="_blank" rel="noopener">Agendar consulta</a>
+        <a href="#ebook" class="btn btn--outline btn--outline-dark btn--lg">Ver o e-book</a>
+      </div>
     </div>
   </section>
 
@@ -583,9 +461,9 @@
     </div>
 
     <div class="footer__links">
-      <a href="#sobre">Sobre mim</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#consultoria">Consultoria</a>
+      <a href="#autoridade">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#ebook">E-book</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#faq">Dúvidas</a>
     </div>
@@ -604,7 +482,7 @@
   </div>
   <div class="container footer__bottom">
     <p>© <span id="year"></span> Marcio Souza. Todos os direitos reservados.</p>
-    <p class="footer__disclaimer">Estes materiais têm finalidade exclusivamente educativa e não substituem orientação médica ou nutricional individualizada.</p>
+    <p class="footer__disclaimer">Este site e os materiais oferecidos têm finalidade educativa e não substituem consulta médica ou nutricional individualizada.</p>
   </div>
 </footer>
 
